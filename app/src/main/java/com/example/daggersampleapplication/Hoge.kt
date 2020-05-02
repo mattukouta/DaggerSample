@@ -8,7 +8,7 @@ interface Hoge {
     fun stringFoo(): String
 }
 
-class HogeImpl @Inject constructor(private val string: String): Hoge {
+class HogeImpl @Inject constructor(private val string: String) : Hoge {
     override fun stringHoge() = "hoge"
     override fun stringFuga() = "fuga"
     override fun stringFoo() = string
