@@ -1,6 +1,7 @@
 name: Ktlint CI
 on:
-  pull_request:
+#   pull_request:
+  push:
     branches:
     - master
 jobs:
