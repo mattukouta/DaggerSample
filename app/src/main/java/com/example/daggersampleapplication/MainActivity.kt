@@ -1,8 +1,9 @@
 package com.example.daggersampleapplication
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import dagger.android.support.DaggerAppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
@@ -14,8 +15,10 @@ class MainActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Toast.makeText(this, hoge.stringFoo(), Toast.LENGTH_SHORT).show()
         hoge.stringHoge()
-        hoge.stringFuga()
+
+        button.setOnClickListener {
+            startActivity(Intent(this, SubActivity::class.java))
+        }
     }
 }
