@@ -14,5 +14,5 @@ GitHub Actions用のymlファイルが残っていますが，Bitriseに移行�
 1. UI Testの実行結果からスクショを外部ストレージに保存
 1. 外部ストレージに保存したスクショをPRにコメントとして書き込む
 
-※現状外部ストレージではAmazon S3を使用<br>
+※現状外部ストレージではDropBoxを使用<br>
 ※UI Testとして利用しているVirtual Device Testing for AndroidはBETA版となっている
