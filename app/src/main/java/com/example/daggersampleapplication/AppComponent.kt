@@ -2,6 +2,7 @@ package com.example.daggersampleapplication
 
 import com.example.daggersampleapplication.module.HogeModule
 import com.example.daggersampleapplication.module.MainActivityBuilder
+import com.example.daggersampleapplication.module.SubActivityBuilder
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjectionModule
@@ -13,7 +14,8 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         MainActivityBuilder::class,
-        HogeModule::class
+        HogeModule::class,
+        SubActivityBuilder::class
     ]
 )
 
